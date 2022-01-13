@@ -1,0 +1,117 @@
+.roadmap{
+    z-index: 100;
+    padding: 80px 0px;
+    position: relative;
+    /* background-image: linear-gradient(
+0deg
+, #02397e, transparent); */
+}
+.roadmap h2,h3{
+    margin:50px 0px;
+    font-size:3rem;
+    font-weight: 700;
+    font-family: "Raleway",sans-serif;
+    text-align: center;
+    color: #fff;
+}
+.roadmap img{
+    width: 100%;
+}
+.roadmap .col-md-12{
+    margin-bottom: 60px;
+    z-index: 100;
+}
+.roadmap .overlay{
+    top: 0;
+    background-image: linear-gradient(
+        180deg
+        , #280980ed, transparent);
+        height: 387px;
+}
+.roadmap__col .col-md-6:first-child{
+    padding-right: 50px;
+}
+img.arrow{
+    position: relative;
+    width: 20%;
+    text-align: right;
+    margin-top: 20%;
+    margin-right: 5%;
+}
+.roadmap__content{
+    text-align:left !important;
+    border: 7px solid #fff;
+    border-radius: 1.4rem;
+    background-image: linear-gradient(
+360deg
+, #0d7fb4ed, transparent);
+box-shadow: 15px 17px 30px 9px rgb(11 7 78 / 57%);
+padding-left: 50px;
+}
+.roadmap__content h2{
+    text-align:left !important;
+    font-size:5rem;
+    margin-bottom: 10px;
+}
+.roadmap__content h3{
+    text-align:left !important;
+    font-size: 2.6rem !important;
+}
+.right-sign{
+    
+    color: rgb(31, 255, 23);
+}
+svg.right-sign{
+    font-size:8.5rem;
+}
+.roadmap .col-md-12:nth-child(odd) .roadmap__content h2,.roadmap .col-md-12:nth-child(odd) .roadmap__content h3{
+    text-align:right !important;
+}
+.roadmap .col-md-12:nth-child(odd) .col-md-6{
+    text-align:left !important;
+}
+.roadmap .col-md-12:nth-child(odd) img.arrow{
+    margin-right: 0 !important;
+    margin-left: 5% !important;
+}
+.roadmap .col-md-12:nth-child(odd) .roadmap__content{
+    background-image: linear-gradient(
+180deg
+, #0d7fb4ed, transparent);
+box-shadow: -15px 17px 30px 9px rgb(11 7 78 / 57%);
+padding-right: 50px;
+}
+
+.roadmap .col-md-12:last-child img.arrow{
+    display: none
+}
+
+@media only screen and (max-width:1199px){
+    .roadmap__col .col-md-6{
+        width:100%;
+        text-align:center !important;
+        padding: 0px 12px !important;
+    }
+    img.arrow{
+        margin-top: 5%;
+        text-align:center !important;
+        margin-right:0;
+    }
+    .roadmap__content h2 ,.roadmap__content h3{
+        text-align:center !important;
+    }
+    .roadmap .col-md-12:nth-child(odd) .roadmap__content h2,.roadmap .col-md-12:nth-child(odd) .roadmap__content h3{
+        text-align:center !important;
+    }
+    .roadmap .col-md-12:nth-child(odd) .col-md-6{
+        text-align:center !important;
+    }
+    .roadmap .col-md-12:nth-child(odd) img.arrow{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 5% !important;
+    }
+    .roadmap__content{
+        padding:0px 10px !important;
+    }
+}

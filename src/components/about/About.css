@@ -1,0 +1,135 @@
+ul{
+  padding:0;
+}
+
+.about {
+  position: relative;
+  /* background: url(../../assets/images/about-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  padding-top: 300px;
+  height: 135vh;
+  z-index: 100;
+}
+img.bg-img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.about .overlay {
+  top: 0;
+  z-index: 50;
+  background-image: linear-gradient(180deg, #190371e6, transparent);
+}
+.about .overlay-2 {
+  z-index: 50;
+  bottom: 0;
+  top: auto;
+  height: 653px;
+  background-image: linear-gradient(360deg, #1a0666, transparent);
+}
+.about__details {
+  position: relative;
+  z-index: 100;
+  padding: 0;
+  /* margin-top: 100px; */
+  background: rgb(26, 154, 228);
+  color: #ffffff;
+}
+.about__details .col-md-6:last-child {
+  text-align: right;
+}
+.about__details .col-md-6 img {
+  width: 100%;
+}
+.about__details__container {
+  padding: 50px 20px 50px 80px;
+}
+.about__details h1 {
+  font-size: 6rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.about__details p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+}
+#ab-2 .col-md-6:first-child {
+  padding-right: 0;
+}
+#ab-2 .col-md-6:last-child {
+  text-align: left;
+  padding-left: 0;
+}
+#ab-2 {
+  margin-top: -49.1%;
+}
+#ab-2 .about__details__container {
+  padding: 50px 80px 50px 80px;
+  background-color: rgb(246, 143, 7);
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  img.bg-img{
+    display: none;
+  }
+  .img {
+    width: 100% !important;
+    padding-right: 12px !important;
+  }
+  .about {
+    background: linear-gradient(180deg, #0a0028, transparent);
+    height:auto;
+    overflow: hidden;
+    padding:100px;
+  }
+  #ab-2 {
+    margin-top: 14%;
+}
+  .about__details__container{
+    padding: 50px;
+  }
+
+  li{
+    margin-bottom:20px;
+  }
+}
+
+@media only screen and (max-width:992px){
+  .about{
+    padding:100px 80px;
+  }
+}
+
+@media only screen and (max-width:762px){
+  .about__details h1{
+    font-size: 4rem;
+  }
+
+  .about{
+    padding:100px 12px;
+  }
+}
+
+@media only screen and (max-width:600px){
+  .about__details h1{
+    font-size:2rem;
+  }
+  .about__details p{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .about__details__container {
+    padding: 50px 20px !important;
+}
+}

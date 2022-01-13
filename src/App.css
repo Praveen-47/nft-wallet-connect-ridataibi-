@@ -1,0 +1,42 @@
+.uppercase{
+    text-transform: uppercase;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer a{
+    color: rgb(231, 231, 231);
+}
+
+.footer a:hover{
+    color: rgb(70, 190, 226);
+}
+.mobile-only{
+    display: none;
+}
+
+a:hover{
+    color:rgb(51, 51, 51);
+}
+@media only screen and (max-width:1199px){
+    .mobile-only{
+        display: block;
+    }
+    .desktop-only{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .h2{
+        font-size:2.3rem !important;
+    }
+}

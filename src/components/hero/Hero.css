@@ -1,0 +1,102 @@
+.hero {
+  padding-top: 100px;
+  position: relative;
+  z-index: 100;
+  /* margin-top: 40px; */
+  /* height: 86.9vh; */
+  box-shadow: 0px 0px 30px 10px rgb(10 14 63 / 22%);
+  transition: all 0.3s ease-in-out;
+  background-image: url(https://wallpaperaccess.com/full/2153948.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.hero:hover {
+  box-shadow: 0px 0px 30px 20px rgba(8, 10, 46, 0.267);
+}
+.hero h1 {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 50px;
+  color: #fff;
+  z-index: 100;
+}
+.hero p {
+  position: relative;
+  margin: 50px 0px;
+  font-size: 1.5rem;
+  color: rgb(240, 180, 102);
+  font-family: "Open Sans", sans-serif;
+  z-index: 100;
+}
+.hero button {
+  position: relative;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  border: 5px solid rgb(246, 143, 7);
+  border-radius: 1.4rem;
+  background: none;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(246, 143, 7);
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+.hero button:hover {
+  color: #fff;
+  background-color: rgb(246, 143, 7);
+}
+.hero .col-md-8 img {
+  width: 100%;
+  z-index: 10;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 229px;
+  background-image:   linear-gradient(360deg, #942fa0c4, transparent)  ;
+  z-index: 20;
+}
+.mobile-only{
+  display: none;
+}
+
+@media screen and (max-width:1199px){
+  .desktop-only{
+    display:none;
+  }
+  .mobile-only{
+    display:block;
+    width: 100% !important;
+    flex:0 0 100%;
+    text-align:center !important;
+    padding:0px 12px;
+  }
+  .hero .col-md-4{
+    display:block;
+    width: 100% !important;
+    flex:0 0 100%;
+    text-align:center !important;
+    padding:0px 106px;
+  }
+  .hero .col-md-8{
+    position: relative;
+    width: 100% !important;
+    text-align: start;
+    top:83px;
+  }
+  .hero{
+    padding-bottom: 80px;
+    
+  }
+}
+
+@media only screen and (max-width:992px){
+  .hero .col-md-4{
+    padding:0px 12px;
+  }
+}

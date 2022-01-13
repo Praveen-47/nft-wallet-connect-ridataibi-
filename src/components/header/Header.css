@@ -1,0 +1,136 @@
+.header{
+    padding:20px 0px 10px;
+    font-family: 'Raleway',sans-serif;
+    font-size:1.3rem;
+    font-weight: 600;
+    color: #fff;
+    z-index: 100;
+    position: relative;
+    background-image: linear-gradient(
+0deg
+, #03153d, transparent);
+
+}
+.header nav li{
+    list-style: none;
+    cursor: pointer;
+}
+.header nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.header .header__socialLinks li{
+    font-family: fontawesome;
+}
+
+.header__toggleNav{
+    display:none;
+    margin-top:50px;
+}
+
+.header__toggleNav li{
+    list-style: none;
+    font-family: 'Raleway',sans-serif;
+    font-size:1.2rem;
+    font-weight: 600;
+}
+
+.header__toggler{
+    display: flex;
+    flex-direction: column;
+    background:none;
+    border:none;
+    z-index: 300;
+}
+
+.header__toggleNav span{
+    display:inline-block;
+    width: 60px;
+    height: 8px;
+    border-radius: 0.8rem;
+    margin: 5px 0px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    top: 0;
+}
+.animation_1{
+    position: relative;
+    top: 18px !important;
+    transform-origin: 0 0 10;
+    transform:rotateZ(-60deg);
+}
+.span-3{
+    transform:scaleX(1);
+}
+.animation_2{
+    transform:scaleX(0) !important;
+}
+.animation_3{
+    transform: rotateZ(60deg);
+}
+.active{
+    /* display:block !important; */
+    transform:scaleX(1) !important;
+}
+
+@media screen and (max-width:1199px){
+    .header__toggleNav{
+        display: flex;
+        position:relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    }
+    .website__logo{
+        display:none;
+    }
+    .header{
+        /* display:none; */
+        position: absolute;
+        /* color: rgb(3, 2, 87); */
+        top: 0;
+        right: 0;
+        background-image: linear-gradient(269deg, #003c67e3 0%, #082c4b 48%, #010715 100%);
+        padding:0px 60px 30px 60px;
+        height: 150vh;
+        margin: 0;
+        font-size:2.5rem;
+        transition: all 0.3s ease-in-out;
+        transform-origin: right;
+        transform: scaleX(0);
+        z-index: 200;
+    }
+    .header nav{
+        height: 150vh;
+    }
+    .header nav , .header nav ul{
+        flex-direction: column;
+        row-gap:20px;
+        justify-content: center;
+        align-items: center;
+    }
+    ul.header__socialLinks{
+        flex-direction:row !important;
+        margin-top:50px !important;
+    }
+    .header__socialLinks svg{
+        width:3rem;
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .header{
+        padding: 0px 21px 30px 23px;
+    }
+}
